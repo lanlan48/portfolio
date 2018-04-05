@@ -3,3 +3,13 @@
 .grid-x {border:1px solid blue;}
 
 .cell {border:1px solid green;}
+
+li{color:blue; background-color: black;}
+
+/* navigation */
+Nav >ul >li>a:link {color:white; background-color: black;}
+Nav >ul >li>a:hover {color:white; background-color: black;}
+Nav >ul >li>a:active {color:white; background-color: black;}
+Nav >ul >li>a:visited {color:white; background-color: black;}
+
+#logo{width:150px; height:100px; background-color: red; background-image: url("https://placeimg.com/300/300/people"); background-size: cover;}
