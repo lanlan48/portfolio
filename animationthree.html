@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+    <style media="screen">
+/*the second requirement*/
+h1,p,a {border:1px solid red;}
+h1{background:black;
+  color:grey;
+  text-align: center;
+  font-family:verdana;
+  font-size:36px;
+  line-height: 45px;
+  transform:translate(0, -100px);
+transition:all 1s ease-out;
+}
+#frame:hover>h1{transform:translate(0,0);}
+
+p {color:black;
+  font-family:serif;
+  font-size:0.7em;
+  text-align:center;
+  font-style:oblique;
+  width:70%;
+  margin:0 auto;
+  transform:translate(0,320px);
+  transition: all 1s ease-out;
+  }
+  #frame:hover>p{transform:translate(0,0);}
+
+  img{transform:translate(0,300px);
+transition: all 2s ease-out;
+display: block;
+ margin-left: auto;
+    margin-right: auto;
+  }
+  #frame:hover>img{transform:translate(0,0);}
+
+a{position:absolute;
+top:160;
+left:50%;
+font-family:verdana;
+display:block;
+width:120px;
+margin-left:-60px;
+background-color:black;
+color:grey;
+text-decoration:none;
+text-align:center;
+font-size:10px;
+line-height:20px;
+opacity:1;
+transition: all 2s ease-out;}
+div:hover>a{opacity:0;}
+
+.mask{background:orange;
+height:100%;
+width:100%;
+position:absolute;
+top:0;
+left:0;
+opacity:0;
+transition: opacity 1.5s;}
+div:hover>.mask{opacity:0.3;}
+
+#frame{
+  position: relative;
+  border:2px solid black;
+height:400px;
+width:600px;
+overflow:hidden;
+transition: all 2s;
+background-image:radial-gradient(red, yellow, green);
+background-size:100%;
+background-position:center;
+z-index:1;
+}
+
+
+
+#frame:hover {background-size:120%;}
+
+
+/*the second requirement*/
+    </style>
+  </head>
+
+
+  <body>
+<h1>sdfsdfds</h1>
+    <main class="grid-container">
+      <div class="grid-x grid-padding-x grid-margin-x grid-margin-y">
+        <header class="large-12 cell ">
+          <h1>Animation Lab Transitions</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="animation.html">Sprite</a></li>
+              <li><a href="animationtwo.html">Keyframes</a></li>
+              <li><a href="animationthree.html">Transitions</a></li>
+<hr>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+<!--the second requirement-->
+
+<div id="frame">
+  <div class="mask"></div>
+  <h1>Vienna</h1>
+  <p>The capital and largest city, with a population exceeding 1.8 million, is Vienna. Other major urban areas of Austria include Graz, Linz, Salzburg and Innsbruck.</p>
+  <a href="">What is the capital of Austria? Hover to find out.</a>
+
+  <img src="image/flag2.png" alt="map of austria">
+
+</div>
+<!--the second requirement-->
+
+  </body>
+</html>

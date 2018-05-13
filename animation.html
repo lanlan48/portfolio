@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Lab Keyframes</title>
+    <!-- ////// Need For Zurb /////// -->
+    <link rel="stylesheet" href="zurb6/css/foundation.css">
+    <link rel="stylesheet" href="zurb6/css/app.css">
+    <!-- ////// End Need For Zurb /////// -->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+     <link href="animations.css" rel="stylesheet">
+
+     <style media="screen">
+       .stage{border:1px solid red;
+          height: 468px;
+          width: 469px;
+          background-image:  url("image/austria.jpg");
+          animation: play 1.5s steps(7) infinite;
+        }
+        .stage:hover{animation-play-state: paused;}
+     @keyframes play {
+     from{background-position: 0;
+     }
+     to{background-position: 3284px;}
+     }
+
+
+     </style>
+
+  </head>
+  <body>
+
+
+    <main class="grid-container">
+      <div class="grid-x grid-padding-x grid-margin-x grid-margin-y">
+        <header class="large-12 cell ">
+          <h1>Animation Lab Sprite</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="animation.html">Sprite</a></li>
+              <li><a href="animationtwo.html">Keyframes</a></li>
+              <li><a href="animationthree.html">Transitions</a></li>
+<hr>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+<div class="stage">
+
+
+
+
+
+</main> <!--End Grid Container -->
+    <!-- ////// Need For Zurb /////// -->
+    <script src="../zurb6/js/vendor/jquery.js"></script>
+    <script src="../zurb6/js/vendor/what-input.js"></script>
+    <script src="../zurb6/js/vendor/foundation.js"></script>
+    <script src="../zurb6/js/app.js"></script>
+    <!-- ////// Need For Zurb /////// -->
+  </body>
+</html>
